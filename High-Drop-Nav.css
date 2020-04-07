@@ -1,85 +1,91 @@
+/* ---------------resetting */
 *{
      margin: 0;
      padding: 0;
 }
-html{
-     font-size: 17px;
-     font-family: tahoma;
-}
 body{
      background-color: deeppink;
+     font-family: sans-serif;
+     user-select: none;
 }
+/* **********************************
+.                              NAVBAR
+********************************** */
 nav{
      position: fixed;
+     top: 0;
+     left: 0;
+
      height: 100%;
      width: 65%;
-}
-nav::before{
-     content: "";
-     display: inline-block;
-     width: 10px;
-     height: 100%;
-     vertical-align: middle;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
 nav ul{
-     width: 80%;;
-     display: inline-block;
-     vertical-align: middle;
+     width: 80%;
 }
 nav ul li{
-     display: block;
-     text-transform: uppercase;
+     list-style-type: none;
      line-height: 2;
-     font-style: 0.8rem;
-     padding-left: 30%;
-     font-weight: bold;
-     color: white;
-     cursor: pointer;
      letter-spacing: 2px;
+     padding-left: 30%;
+
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: bolder;
 }
+/* --------------------------------HAMBURGER */
+
 .hamburger{
-     left: 1rem;
-     top: 1rem;
-     width: 1.5rem;
-     height: 0.7rem;
-     position: fixed;
+     width: 50px;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     background-color: deeppink;
      z-index: 2;
-     cursor: pointer;
 }
-.hamburger span{
+.hamburger::before,
+.hamburger::after,
+.hamburger > div{
+     content: "";
      display: block;
-     background-color: #262626;
-     height: 20%;
-     margin-bottom: 20%;
+
+     height: 5px;
+     margin: 7px;
+
+     background-color: white;
+     border-radius: 10px;
+     transition: 0.4s ease;
 }
+     nav.active ~ .hamburger::before{
+     transform: translateY(12px) rotate(315deg);
+}
+     nav.active ~ .hamburger::after{
+     transform: translateY(-12px) rotate(-315deg);
+}
+     nav.active ~.hamburger > div{
+     transform: scale(0);
+}
+
+/* ***********************************
+.                         CONTAINER
+*********************************** */
 .container{
+     background-color: #fff;
      position: fixed;
      top: 0;
      left: 0;
      right: 0;
      bottom: 0;
-     background-color: #fafafa;
-     color: #262626;
      padding: 4rem;
      overflow: auto;
      transition: 0.2s ease;
+     z-index: 1;
 }
 
-@media screen and (orientation: portrait){
-     .container{
-          padding: 4rem 1rem;
-     }
-}
 
-.container a{
-     color: #00c7be;
-}
-.container p{
-     padding-bottom: 1em;
-}
-.container h4{
-     margin: 1em 0;
-}
 
 @media screen and (orientation: portrait){
      nav.active + .container{
