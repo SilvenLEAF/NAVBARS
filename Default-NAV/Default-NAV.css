@@ -1,0 +1,62 @@
+:root{
+     --hamTrans: 0.4s ease;
+}
+
+/* -------------------------------------------------- */
+html, body{
+     height: 100%;
+     background: darkcyan;
+}
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-size: 16px;
+     font-family: tahoma;
+}
+
+/* **********************************
+.                             NAVBAR
+*********************************** */
+.nav{
+     width: 300px;
+     background-color: #292836;
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     transform: translateX(-300px);
+
+}
+.nav ul li{
+     background: #353441;
+     color: #9dc6d1;
+     height: 60px;
+     padding: 30px;
+     font-size: 120%;
+     letter-spacing: 2px;
+     display: flex;
+     align-items: center;
+     transition: 0.3s ease;
+
+}
+.nav ul li:nth-last-of-type(2n){
+     background-color: #292836;
+}
+.nav ul li:hover{
+     background-color: orangered;
+     color: #fff;
+}
+
+/* **********************************
+.                    HEADINGS PARAS
+*********************************** */
+h1{
+     font-size: 200%;
+     padding: 0px 50px;
+}
+p{
+     font-size: 130%;
+     margin: 30px 100px;
+     text-align: justify;
+}

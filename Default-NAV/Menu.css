@@ -1,0 +1,55 @@
+/* **********************************
+.                    MENU-BUTTON
+*********************************** */
+.checkbox{
+     width: 40px;
+     height: 40px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0;
+     z-index: 1000;
+}
+/* ----------------------------hamburger */
+.hamburger{
+     width: 50px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 500;
+}
+.hamburger::before,
+.hamburger::after,
+.hamburger > div{
+     content: "";
+     display: block;
+
+     height: 5px;
+     margin: 7px;
+
+     background-color: #fff;
+     border-radius: 10px;
+     transition: var(--hamTrans);
+}
+/* ----------------------------hamburger  animation*/
+.checkbox:checked + .hamburger::before{
+     transform: translateY(12px) rotate(-135deg);
+}
+.checkbox:checked + .hamburger::after{
+     transform: translateY(-12px) rotate(135deg);
+}
+.checkbox:checked + .hamburger > div{
+     transform: scale(0);
+}
+/* ---------------------------------------nav and button */
+.checkbox:checked, .checkbox:checked + .hamburger{
+     transform: translateX(240px);
+}
+.checkbox:checked ~ .nav{
+     transform: translateX(0px);
+}
+/* ***************transition */
+.nav, .checkbox, .hamburger{
+     transition: var(--hamTrans);
+
+}
