@@ -1,0 +1,93 @@
+:root{
+     --hamTrans: 0.4s ease;
+}
+
+/* -------------------------------------------------- */
+html, body{
+     height: 100%;
+}
+body{
+     background: deeppink;
+     perspective: 800px;
+     perspective-origin: 0% 50%;
+     font-size: 16px;
+}
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: tahoma;
+}
+
+/* **********************************
+.                             NAVBAR
+*********************************** */
+.nav{
+     width: 300px;
+     background-color: #292836;
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     transform: translateX(-300px);
+
+}
+.nav ul li{
+     background: #353441;
+     color: #9dc6d1;
+     height: 60px;
+     padding: 30px;
+     font-size: 120%;
+     letter-spacing: 2px;
+     display: flex;
+     align-items: center;
+     transition: 0.3s ease;
+
+}
+.nav ul li:nth-last-of-type(2n){
+     background-color: #292836;
+}
+.nav ul li:hover{
+     background-color: orangered;
+     color: #fff;
+}
+
+/* **********************************
+.                    MAIN SEGMENT
+*********************************** */
+.main{
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     overflow: auto;
+     background: darkcyan;
+     transform-origin: left;
+
+}
+/* **********************************
+.                    WELCOME!!!
+*********************************** */
+.welcome{
+     height: 50px;
+     width: 300px;
+     position: fixed;
+     top: 40%;
+     left: 45%;
+     font-size: 250%;
+     color: #fff;
+     z-index: -2;
+}
+
+/* **********************************
+.                    HEADINGS PARAS
+*********************************** */
+h1{
+     font-size: 300%;
+     padding: 0px 50px;
+}
+p{
+     font-size: 130%;
+     margin: 30px 100px;
+     text-align: justify;
+}
