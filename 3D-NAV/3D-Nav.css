@@ -1,3 +1,4 @@
+/* *************************** reset*/
 html, body{
      height: 100%;
 }
@@ -6,6 +7,7 @@ html, body{
      margin: 0;
      padding: 0;
 }
+/* *****************************default*/
 body{
      font-family: tahoma;
      line-height: 1.7;
