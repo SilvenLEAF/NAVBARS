@@ -50,6 +50,9 @@ nav li:hover{
      background: orangered;
      color: #fff;
 }
+/* **********************************
+.             MAIN SECTION
+********************************** */
 main{
      z-index: 0;
      position: absolute;
