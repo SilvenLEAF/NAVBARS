@@ -10,7 +10,7 @@ body{
      background: deeppink;
      perspective: 800px;
      perspective-origin: 0% 50%;
-     font-size: 16px;
+     font-size: 14px;
 }
 *{
      margin: 0;
