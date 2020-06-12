@@ -12,7 +12,7 @@ html, body{
      padding: 0;
      box-sizing: border-box;
      font-size: 16px;
-     font-family: tahoma;
+     font-family: tahoma,  Dosis, sans-serif;
 }
 
 /* **********************************
