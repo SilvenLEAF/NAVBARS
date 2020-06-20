@@ -46,8 +46,8 @@ nav ul li:hover{
 .hamburger{
      width: 50px;
      position: absolute;
-     top: 0;
-     left: 0;
+     top: 0px;
+     left: 0px;
 ;}
 .hamburger::before,
 .hamburger::after,
